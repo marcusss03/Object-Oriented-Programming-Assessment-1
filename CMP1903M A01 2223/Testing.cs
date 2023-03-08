@@ -31,7 +31,7 @@ namespace CMP1903M_A01_2223
                     Card dealedCard = Pack.deal();
 
                     Console.WriteLine(dealedCard.Value + " of " + dealedCard.Suit); // Returns the card in a format the user can understand
-                    Console.ReadLine();
+                    
                 }
                 else
                 {
@@ -42,7 +42,7 @@ namespace CMP1903M_A01_2223
                     Card dealedCard = Pack.deal();
 
                     Console.WriteLine(dealedCard.Value + " of " + dealedCard.Suit); // Returns the card in a format the user can understand
-                    Console.ReadLine();
+                    
                 }
             }
             else
@@ -56,7 +56,7 @@ namespace CMP1903M_A01_2223
             for(int i = 0; i < amountOfDeals; i++) // For loop that deals cards until the 'i' int reaches the value inputted by user
             {
                 Console.WriteLine("Press Enter For Next Card...");
-                Console.ReadLine();
+                
                 Card dealCard = Pack.deal();
                 Console.WriteLine(dealCard.Value + " of " + dealCard.Suit); // Returns the card in a format the user can understand
                 Console.ReadLine();
