@@ -103,5 +103,14 @@ namespace CMP1903M_A01_2223
             amountOfDeals++;
             return pack[deals];
         }
+
+        public static Card DealCard(int amount) //Deals the number of cards specified by 'amount'
+        {
+
+            int deals = amountOfDeals;
+            amountOfDeals++;
+            return pack[deals];
+
+        }
     }
 }
