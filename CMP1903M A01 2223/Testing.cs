@@ -10,8 +10,6 @@ namespace CMP1903M_A01_2223
     class Testing
     {
         // This class is used to test that pack population, shuffles, and the deal are all somewhat working
-
-        // Removed the need to press enter all the time to deal a new card, instead it now deals the specified amount all at once (as suggested in a review).
         static void Main(string[] args)
         {
             Console.WriteLine("Press enter to initialize pack of cards...");
@@ -38,13 +36,11 @@ namespace CMP1903M_A01_2223
                 else
                 {
                     Console.WriteLine("No Shuffle.. Dealing a Card");
-                    Console.ReadLine();
 
                     Pack.shuffleCardPack(3);
                     Card dealedCard = Pack.deal();
 
                     Console.WriteLine(dealedCard.Value + " of " + dealedCard.Suit); // Returns the card in a format the user can understand
-                    
                 }
             }
             else
@@ -57,13 +53,11 @@ namespace CMP1903M_A01_2223
             
             for(int i = 0; i < amountOfDeals; i++) // For loop that deals cards until the 'i' int reaches the value inputted by user
             {
-                //Console.WriteLine("Press Enter For Next Card...");
-                
+                Console.WriteLine("Press Enter For Next Card...");
                 Card dealCard = Pack.deal();
                 Console.WriteLine(dealCard.Value + " of " + dealCard.Suit); // Returns the card in a format the user can understand
-                
+                Console.ReadLine();
             }
-            Console.ReadLine();
         }
     }
 }
