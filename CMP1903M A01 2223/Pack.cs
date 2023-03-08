@@ -15,6 +15,7 @@ namespace CMP1903M_A01_2223
 
         static int amountOfDeals = 0;
 
+        // Additioinal method implemented for the pack population below
         public static Card[] PopulatePack()
         {
             // A function for creating a pack of 52 cards
