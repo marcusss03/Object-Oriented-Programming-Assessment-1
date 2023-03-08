@@ -9,9 +9,9 @@ namespace CMP1903M_A01_2223
 {
     internal class Program : Testing
     {
-       static void runProgram()
+       static void ProgramRun(string[] args)
         {
-            
+            Testing testClass = new Testing();
         }
     }
 }
